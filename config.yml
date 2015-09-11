@@ -1,0 +1,7 @@
+database:
+  host: localhost
+  user: degendra
+  password: password
+  port: 1234
+  dbname: degendra
+  sslmode: disable
