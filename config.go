@@ -7,8 +7,9 @@ import (
 	"gopkg.in/yaml.v2"
 )
 
-//Singleton config
+//Config is a singleton configuration holder
 var Config Configuration
+
 //Configuration holds config data
 type Configuration struct {
 	Database database
