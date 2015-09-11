@@ -9,12 +9,12 @@ import (
 
 //Singleton config
 var Config Configuration
-
+//struct defining config yml file data structure
 type Configuration struct {
-	Database Database
+	Database database
 }
 
-type Database struct {
+type database struct {
 	Host     string
 	User     string
 	Password string
@@ -22,7 +22,7 @@ type Database struct {
 	Dbname   string
 	Sslmode  string
 }
-
+//func to load configuration from file to Configuration struct
 func LoadConfig() {
 	source, err := ioutil.ReadFile("config.yml")
 	if err != nil {
